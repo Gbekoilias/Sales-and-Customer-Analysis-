@@ -15,33 +15,36 @@ Let this report serve as a valuable resource to gain deeper insights into our sa
 
 <h2 align='center'> Problem Statement
 </h2>
-### The Story Unfolded: A Quest for Business Insights
 
+<h3 align = 'left'> The Story Unfolded: A Quest for Business Insights
+</h3>
 Once upon a time in the bustling realm of commerce, a company known for its dedication to quality and customer satisfaction thrived in the competitive landscape. As with any enterprise, the company faced the ever-present challenge of making sense of its data, seeking hidden patterns, and uncovering opportunities to serve its customers better.
 
 In this narrative, the problem we encounter is not uncommon but is certainly of paramount importance. It's the tale of understanding the heartbeats of our business, deciphering the melody hidden within our transactions, and weaving it into a symphony of success. The company, let's call it "BusinessCo," embarked on a journey to answer some crucial questions:
 
-### The Mystery of Sales Patterns
-
+<h3 align = 'left'> The Mystery of Sales Patterns
+</h3>
 BusinessCo wanted to decipher the ebb and flow of its sales over time. Were there specific months when sales flourished? Were there any underlying trends or seasonality that could guide inventory management and marketing strategies?
 
-### The Enigma of Customer Geographics
-
+<h3 align = 'left'> The Enigma of Customer Geographics
+</h3>
 The company was also curious about where its most valuable customers resided. Were they clustered in particular geographic regions? Could the geographic concentration of high-value customers reveal untapped markets or the need for customized marketing approaches?
 
-### The Quest for Customer Loyalty
-
+<h3 align = 'left'> The Quest for Customer Loyalty
+</h3>
 BusinessCo had a desire to fathom the depths of customer loyalty. How often did customers return to make new purchases? Were there signs of waning interest? Unraveling this mystery could lead to strategies that nurtured long-term relationships.
 
-### The Tale of Customer Sentiments
-
+<h3 align = 'left'>The Tale of Customer Sentiments
+</h3>
 Beyond the numbers, BusinessCo was intrigued by the unspoken voices of its customers. What did they really think about its products and services? Were there trends in customer sentiment that could guide improvements and foster a deeper connection?
 
-### The Magic of Timing
+<h3 align = 'left'> The Magic of Timing
+</h3>
 
 Another conundrum was the timing of customer purchases. Did certain hours of the day see a surge in orders? Understanding this pattern could optimize staffing and marketing efforts.
 
-### The Dance of Retention
+<h3 align = 'left'> The Dance of Retention
+</h3>
 
 Lastly, BusinessCo wished to analyze the retention rate of its customers. How many continued their journey with the company, and how many ventured elsewhere? This exploration was pivotal in shaping strategies for customer retention.
 
