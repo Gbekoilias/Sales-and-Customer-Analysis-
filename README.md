@@ -12,8 +12,9 @@ As we delve into this comprehensive analysis, we will explore a wide array of da
 Our analysis goes beyond merely providing data and statistics; it offers actionable recommendations based on the findings to empower our business decisions. By the end of this report, we aim to equip you with the knowledge and insights needed to make informed choices, identify growth opportunities, and enhance customer satisfaction.
 
 Let this report serve as a valuable resource to gain deeper insights into our sales patterns, customer behaviors, and product strategies. Through the power of data, we embark on a journey of understanding, improvement, and growth.
-<h2 align='center' Problem Statement
-  </h2>
+
+<h2 align='center'> Problem Statement
+</h2>
 ### The Story Unfolded: A Quest for Business Insights
 
 Once upon a time in the bustling realm of commerce, a company known for its dedication to quality and customer satisfaction thrived in the competitive landscape. As with any enterprise, the company faced the ever-present challenge of making sense of its data, seeking hidden patterns, and uncovering opportunities to serve its customers better.
