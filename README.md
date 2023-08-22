@@ -51,3 +51,7 @@ Lastly, BusinessCo wished to analyze the retention rate of its customers. How ma
 The answers to these questions held the key to enhancing BusinessCo's operations, maximizing customer satisfaction, and charting a course toward growth. This is the tale of how data-driven insights came to the rescue, unraveling the mysteries that befell BusinessCo's path.
 
 Join us in the chapters that follow as we journey through data visualizations and analyses, shedding light on the enigmas that faced BusinessCo and discovering actionable insights that can shape its future.
+
+<h3 align = 'center'> Methodology
+</h3>
+The methodology used to unlock BusinessCo's mysteries was rooted in a systematic approach to data collection, analysis, and visualization. It transformed raw data into actionable insights, guiding strategic decisions. By delving into sales patterns, geographic customer distribution, customer loyalty, sentiment analysis, and purchase timing, BusinessCo now possesses a map to navigate its future. This methodology is a testament to the power of data-driven decision-making, transforming challenges into opportunities for growth and success.
