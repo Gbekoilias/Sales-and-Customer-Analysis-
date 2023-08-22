@@ -1,7 +1,8 @@
-<h1 align='center' Sales-and-Customer-Analysis-Report
+<h1 align="center"> Sales-and-Customer-Analysis-Report
 </h1>
+
   
-<h2 align='center' Introduction
+<h2 align='center'> Introduction
 </h2>
   
 In an era characterized by data-driven decision-making, understanding the intricacies of your business is paramount. In this ever-evolving landscape, businesses must harness the power of data to make informed choices, optimize strategies, and ultimately thrive. The Sales and Customer Analysis Report presented herein aims to provide a holistic view of our business, offering insights into various facets that contribute to our success.
