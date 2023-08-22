@@ -55,3 +55,9 @@ Join us in the chapters that follow as we journey through data visualizations an
 <h3 align = 'center'> Methodology
 </h3>
 The methodology used to unlock BusinessCo's mysteries was rooted in a systematic approach to data collection, analysis, and visualization. It transformed raw data into actionable insights, guiding strategic decisions. By delving into sales patterns, geographic customer distribution, customer loyalty, sentiment analysis, and purchase timing, BusinessCo now possesses a map to navigate its future. This methodology is a testament to the power of data-driven decision-making, transforming challenges into opportunities for growth and success.
+
+<h2 align = 'center'> Charts and Visualizations
+</h2>
+
+### Average Discount by Product Category
+<img src="https://github.com/Gbekoilias/Sales-and-Customer-Analysis-/blob/main/MegaSuperStore/Viz/Average%20Discount%20by%20Product%20Category%20(BarChart).png" alt="Average Discount by Product Category(barchart)">
