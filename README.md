@@ -61,3 +61,15 @@ The methodology used to unlock BusinessCo's mysteries was rooted in a systematic
 
 ### Average Discount by Product Category
 <img src="https://github.com/Gbekoilias/Sales-and-Customer-Analysis-/blob/main/MegaSuperStore/Viz/Average%20Discount%20by%20Product%20Category%20(BarChart).png" alt="Average Discount by Product Category(barchart)">
+Comprehensive examination of discount values across these categories revealed a noteworthy hierarchy.
+
+Furniture emerged as the category with the highest average discount, standing prominently at 0.173, showcasing our commitment to enticing customers with competitive offers in this segment. This insight underscores the significance of pricing strategies in the fiercely competitive furniture market.
+
+Office Supplies, while not boasting the same discount levels as Furniture, held its ground with respectable discounts, offering customers attractive deals. Our data indicates an intermediate position with a lower but still noteworthy average discount value.
+
+Interestingly, Technology emerged as the category with the lowest average discount. This revelation hints at the potential strength of the Technology segment in our business, possibly driven by a combination of high demand and competitive pricing.
+
+These findings provide a solid foundation for our pricing and marketing strategies, allowing us to tailor our approach to each product category's unique dynamics. As we move forward, we can harness this data analytical approach to further optimize our discount strategies, striking the right balance between profitability and customer attraction in each category.
+
+### Customer Purchase Pattern
+<img src="https://github.com/Gbekoilias/Sales-and-Customer-Analysis-/blob/main/MegaSuperStore/Viz/Monthly%20sales%20distribution%20(bar%20chart).png" alt="Monthly Sales Distribution (BarChart)>
