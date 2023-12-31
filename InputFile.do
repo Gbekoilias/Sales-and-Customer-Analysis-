@@ -1,7 +1,8 @@
 clear // Clear any existing data in memory
 
 // Importing a CSV file named "mydata.csv" located in the specified path
-import delimited "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\MegaSuperStore\Sample_-_Superstore.csv", clear firstrow
+cd "C:/Users/DONKAMS/Downloads/Sales-and-Customer-Analysis-"
+import delimited "MegaSuperStore Sample_-_Superstore.csv", clear varnames(1)
 
 // Save your dataset if needed
 save "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-", replace
