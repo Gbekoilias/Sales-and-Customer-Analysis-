@@ -6170,4 +6170,106 @@ end of do-file
 {com}. 
 {txt}end of do-file
 
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. collapse (sum) sales, by(region)
+{txt}
+{com}. collapse (sum) sales, by(city)
+{err}variable city not found
+(error in option {bf:by()})
+{txt}{search r(111):r(111);}
+
+end of do-file
+
+{search r(111):r(111);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. import delimited "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\MegaSuperStore\Sample_-_Superstore.csv", clear varnames(1)
+{res}{text}(21 vars, 9994 obs)
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. collapse (sum) sales, by(city)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales, descending
+{err}option {bf:descending} not allowed
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. help sort
+
+. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales
+{txt}
+{com}. list region sales in 1/10
+{err}variable region not found
+{txt}{search r(111):r(111);}
+
+end of do-file
+
+{search r(111):r(111);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales
+{txt}
+{com}. list city sales in 1/10
+{txt}
+     {c TLC}{hline 17}{c -}{hline 7}{c TRC}
+     {c |} {res}           city   sales {txt}{c |}
+     {c LT}{hline 17}{c -}{hline 7}{c RT}
+  1. {c |} {res}        Abilene   1.392 {txt}{c |}
+  2. {c |} {res}         Elyria   1.824 {txt}{c |}
+  3. {c |} {res}        Jupiter   2.064 {txt}{c |}
+  4. {c |} {res}      Pensacola   2.214 {txt}{c |}
+  5. {c |} {res}   Ormond Beach   2.808 {txt}{c |}
+     {c LT}{hline 17}{c -}{hline 7}{c RT}
+  6. {c |} {res}San Luis Obispo    3.62 {txt}{c |}
+  7. {c |} {res}     Springdale     4.3 {txt}{c |}
+  8. {c |} {res}         Layton    4.96 {txt}{c |}
+  9. {c |} {res}         Keller       6 {txt}{c |}
+ 10. {c |} {res}  Missouri City    6.37 {txt}{c |}
+     {c BLC}{hline 17}{c -}{hline 7}{c BRC}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. use "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\Superstore_Stata_Data.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. collapse (sum) sales, by(region)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales
+{txt}
+{com}. list region sales in 1/10
+{err}Obs. nos. out of range
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
 {com}. 
