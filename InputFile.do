@@ -110,8 +110,16 @@ list productname sales in 1/10
 sort sales
 list category sales in 1/10
 
+
+// Create dummy variables for categories
+egen category_dummy = group(category)
+
+anova sales category_dummy
+
 * Category Comparisons:
 * Is there a significant difference in sales or profit across different product categories or subcategories
+encode category, generate(category_numeric)
+
 * Sales by Category:
 anova sales category
 
@@ -119,5 +127,12 @@ anova sales category
 anova profit category
 
 
-* Non-parametric Test (Kruskal-Wallis):
+* Non-parametric Test (Kruskal-Wallis)
+* Sales by Category
+kruskal sales, by(category)
 
+* Profit by Category
+kruskal profit, by(category)
+
+
+regress profit quantity

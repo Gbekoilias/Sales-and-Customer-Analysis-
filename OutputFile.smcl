@@ -6431,4 +6431,109 @@ end of do-file
 {com}. 
 {txt}end of do-file
 
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. anova sales category
+{err}category:  string variables may not be used as factor variables
+{txt}{search r(109):r(109);}
+
+end of do-file
+
+{search r(109):r(109);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. anova profit category
+{err}category:  string variables may not be used as factor variables
+{txt}{search r(109):r(109);}
+
+end of do-file
+
+{search r(109):r(109);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. use "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\Superstore_Stata_Data.dta", clear
+{txt}
 {com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. anova sales category
+{err}category:  string variables may not be used as factor variables
+{txt}{search r(109):r(109);}
+
+end of do-file
+
+{search r(109):r(109);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. encode category, generate(category_numeric)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. anova sales category
+{err}category:  string variables may not be used as factor variables
+{txt}{search r(109):r(109);}
+
+end of do-file
+
+{search r(109):r(109);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. egen category_dummy = group(category)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. anova sales category_dummy
+
+                           {txt}Number of obs ={res}    9994     {txt}R-squared     ={res}  0.0505
+                           {txt}Root MSE      ={res} 607.377     {txt}Adj R-squared ={res}  0.0503
+
+                  {txt}Source {c |}  Partial SS    df       MS           F     Prob > F
+             {hline 12}{c +}{hline 52}
+                   Model {c |} {res}  195881744     2  97940871.9     265.49     0.0000
+                         {txt}{c |}
+             category_~y {c |} {res}  195881744     2  97940871.9     265.49     0.0000
+                         {txt}{c |}
+                Residual {c |} {res} 3.6857e+09  9991  368906.389   
+             {txt}{hline 12}{c +}{hline 52}
+                   Total {c |} {res} 3.8816e+09  9993  388434.452   
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. regress profit quantity
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}    9994
+{txt}{hline 13}{char +}{hline 30}           F(  1,  9992) ={res}   44.05
+    {txt}   Model {char |} {res} 2407166.55     1  2407166.55           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res}  545986669  9992  54642.3808           {txt}R-squared     = {res} 0.0044
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0043
+    {txt}   Total {char |} {res}  548393835  9993   54877.798           {txt}Root MSE      = {res} 233.76
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}      profit{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}quantity {c |}{col 14}{res}{space 2} 6.975152{col 26}{space 2}  1.05091{col 37}{space 1}    6.64{col 46}{space 3}0.000{col 54}{space 4} 4.915158{col 67}{space 3} 9.035147
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 2.224042{col 26}{space 2} 4.618206{col 37}{space 1}    0.48{col 46}{space 3}0.630{col 54}{space 4}-6.828572{col 67}{space 3} 11.27666
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. save "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\new_data.dta"
+{txt}file C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\new_data.dta saved
+
+{com}. exit
