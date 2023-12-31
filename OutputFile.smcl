@@ -6272,4 +6272,163 @@ end of do-file
 
 {search r(198):r(198);}
 
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. use "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\Superstore_Stata_Data.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. tabulate shipmode
+
+     {txt}Ship Mode {c |}      Freq.     Percent        Cum.
+{hline 15}{c +}{hline 35}
+   First Class {c |}{res}      1,538       15.39       15.39
+{txt}      Same Day {c |}{res}        543        5.43       20.82
+{txt}  Second Class {c |}{res}      1,945       19.46       40.28
+{txt}Standard Class {c |}{res}      5,968       59.72      100.00
+{txt}{hline 15}{c +}{hline 35}
+         Total {c |}{res}      9,994      100.00
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. summarize sales, by(shipmode)
+{err}option {bf:by()} not allowed
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. use "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\Superstore_Stata_Data.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. summarize sales, by(shipmode)
+{err}option {bf:by()} not allowed
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. tabulate shipmode, summarize(sales)
+
+              {txt}{c |}          Summary of Sales
+    Ship Mode {c |}        Mean   Std. Dev.       Freq.
+{hline 14}{c +}{hline 36}
+  First Class {c |}  {res} 228.49702   630.38471        1538
+{txt}     Same Day {c |}  {res} 236.39618   555.25879         543
+{txt} Second Class {c |}  {res} 236.08924    559.1468        1945
+{txt}Standard Cl.. {c |}  {res} 227.58307     646.739        5968
+{txt}{hline 14}{c +}{hline 36}
+        Total {c |}  {res}   229.858    623.2451        9994
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. use "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\Superstore_Stata_Data.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. collapse (sum) sales, by(productname)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales, descending
+{err}option {bf:descending} not allowed
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales
+{txt}
+{com}. list productname sales in 1/10
+{txt}
+     {c TLC}{hline 66}{c -}{hline 7}{c TRC}
+     {c |} {res}                                                     productname   sales {txt}{c |}
+     {c LT}{hline 66}{c -}{hline 7}{c RT}
+  1. {c |} {res}Eureka Disposable Bags for Sanitaire Vibra Groomer I Upright Vac   1.624 {txt}{c |}
+  2. {c |} {res}                                                         Avery 5    5.76 {txt}{c |}
+  3. {c |} {res}                                                        Xerox 20    6.48 {txt}{c |}
+  4. {c |} {res}                                             Grip Seal Envelopes   7.072 {txt}{c |}
+  5. {c |} {res}              Avery Hi-Liter Pen Style Six-Color Fluorescent Set     7.7 {txt}{c |}
+     {c LT}{hline 66}{c -}{hline 7}{c RT}
+  6. {c |} {res} Avery Hi-Liter Comfort Grip Fluorescent Highlighter, Yellow Ink     7.8 {txt}{c |}
+  7. {c |} {res}                                                      Xerox 1989   7.968 {txt}{c |}
+  8. {c |} {res}                                               4009 Highlighters    8.04 {txt}{c |}
+  9. {c |} {res}                                      Stockwell Gold Paper Clips   8.096 {txt}{c |}
+ 10. {c |} {res}                                                      Newell 308     8.4 {txt}{c |}
+     {c BLC}{hline 66}{c -}{hline 7}{c BRC}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. use "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\Superstore_Stata_Data.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. collapse (sum) sales, by(category)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales, descending
+{err}option {bf:descending} not allowed
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. sort sales
+{txt}
+{com}. list category sales in 1/10
+{err}Obs. nos. out of range
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. do "C:\Users\DONKAMS\AppData\Local\Temp\STD01000000.tmp"
+{txt}
+{com}. use "C:\Users\DONKAMS\Downloads\Sales-and-Customer-Analysis-\Superstore_Stata_Data.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
 {com}. 

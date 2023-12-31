@@ -92,4 +92,32 @@ list region sales in 1/10
 sort sales
 list city sales in 1/10
 
+* shipping modes
+tabulate shipmode
+
+tabulate shipmode, summarize(sales)
+
+* Product Analysis:
+* What are the best-selling products or categories?
+collapse (sum) sales, by(productname)
+collapse (sum) sales, by(category)
+
+* To identify the best-selling products:
+sort sales
+list productname sales in 1/10
+
+* To identify the best-selling categories:
+sort sales
+list category sales in 1/10
+
+* Category Comparisons:
+* Is there a significant difference in sales or profit across different product categories or subcategories
+* Sales by Category:
+anova sales category
+
+* Profit by Category:
+anova profit category
+
+
+* Non-parametric Test (Kruskal-Wallis):
 
